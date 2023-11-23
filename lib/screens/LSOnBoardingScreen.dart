@@ -22,9 +22,9 @@ class LSOnBoardingScreenState extends State<LSOnBoardingScreen> {
   List<Widget> viewContainer = [];
 
   LSHomeFragment homeFragment = LSHomeFragment();
-  LSNearByFragment nearByFragment = LSNearByFragment();
+  // LSOfferFragment offerFragment = LSOfferFragment();
+  // LSNearByFragment nearByFragment = LSNearByFragment();
   LSBookingFragment bookingFragment = LSBookingFragment();
-  LSOfferFragment offerFragment = LSOfferFragment();
   LSProfileFragment profileFragment = LSProfileFragment();
 
   @override
@@ -36,9 +36,9 @@ class LSOnBoardingScreenState extends State<LSOnBoardingScreen> {
   init() async {
     viewContainer = [
       homeFragment,
-      nearByFragment,
+      // offerFragment,
+      // nearByFragment,
       bookingFragment,
-      offerFragment,
       profileFragment,
     ];
   }
@@ -56,6 +56,7 @@ class LSOnBoardingScreenState extends State<LSOnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: viewContainer[selectedIndex],
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
@@ -79,16 +80,16 @@ class LSOnBoardingScreenState extends State<LSOnBoardingScreen> {
                   color: LSColorPrimary, height: 24, width: 24),
               label: 'Home',
             ),
-            BottomNavigationBarItem(
-              icon: SvgPicture.asset(LSPin,
-                  fit: BoxFit.fitHeight,
-                  color: lightGrey,
-                  height: 24,
-                  width: 24),
-              activeIcon: SvgPicture.asset(LSPin,
-                  color: LSColorPrimary, height: 24, width: 24),
-              label: 'NearBy',
-            ),
+            // BottomNavigationBarItem(
+            //   icon: SvgPicture.asset(LSChat,
+            //       fit: BoxFit.fitHeight,
+            //       color: lightGrey,
+            //       height: 24,
+            //       width: 24),
+            //   activeIcon: SvgPicture.asset(LSChat,
+            //       color: LSColorPrimary, height: 24, width: 24),
+            //   label: 'Chat',
+            // ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(LSBasket,
                   fit: BoxFit.fitHeight,
@@ -98,16 +99,6 @@ class LSOnBoardingScreenState extends State<LSOnBoardingScreen> {
               activeIcon: SvgPicture.asset(LSBasket,
                   color: LSColorPrimary, height: 24, width: 24),
               label: 'Bookings',
-            ),
-            BottomNavigationBarItem(
-              icon: SvgPicture.asset(LSSale,
-                  fit: BoxFit.fitHeight,
-                  color: lightGrey,
-                  height: 24,
-                  width: 24),
-              activeIcon: SvgPicture.asset(LSSale,
-                  color: LSColorPrimary, height: 24, width: 24),
-              label: 'Offers',
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(LSUser,
@@ -124,11 +115,11 @@ class LSOnBoardingScreenState extends State<LSOnBoardingScreen> {
           unselectedIconTheme: IconThemeData(color: lightGrey, size: 24),
           selectedIconTheme: IconThemeData(color: LSColorPrimary, size: 24),
           selectedLabelStyle: TextStyle(color: LSColorPrimary),
-          onTap: (int index) {
-            setState(() {
-              selectedIndex = index;
-            });
-          },
+          // onTap: (int index) {
+          //   setState(() {
+          //     selectedIndex = index;
+          //   });
+          // },
           type: BottomNavigationBarType.fixed,
         ),
       ),

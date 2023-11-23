@@ -53,7 +53,7 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Hello, Jhon',
+                Text('Hello, CalPride',
                         style: boldTextStyle(color: white, size: 24))
                     .paddingOnly(left: 16, right: 16),
                 IconButton(
@@ -81,21 +81,7 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
                                   .paddingRight(4),
                             ),
                             TextSpan(
-                                text: 'San Francisco',
-                                style: primaryTextStyle(color: white)),
-                          ],
-                        ),
-                      ),
-                      RichText(
-                        text: TextSpan(
-                          children: [
-                            WidgetSpan(
-                              child: Icon(Icons.airplanemode_on_outlined,
-                                      color: white, size: 16)
-                                  .paddingRight(4),
-                            ),
-                            TextSpan(
-                                text: 'Change',
+                                text: 'Malang',
                                 style: primaryTextStyle(color: white)),
                           ],
                         ),
@@ -112,7 +98,7 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
                       textAlignVertical: TextAlignVertical.center,
                       decoration: InputDecoration(
                         fillColor: white,
-                        hintText: 'Search Laundry shop by name...',
+                        hintText: 'Search services by name...',
                         border: InputBorder.none,
                         prefixIcon: Icon(Icons.search, color: grey),
                         contentPadding: EdgeInsets.only(
@@ -122,7 +108,7 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
                     alignment: Alignment.center,
                   ),
                 ],
-              ).paddingTop(70),
+              ).paddingTop(49),
             ),
           )
         ];

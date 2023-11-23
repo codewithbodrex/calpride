@@ -42,15 +42,15 @@ class LSTopServiceComponentState extends State<LSTopServiceComponent> {
               width: 80,
               alignment: Alignment.center,
               margin: EdgeInsets.all(8),
-              decoration: boxDecorationRoundedWithShadow(40, backgroundColor: context.cardColor),
-              child: commonCacheImageWidget(data.img.validate(), 50, width: 50, fit: BoxFit.cover),
+              decoration: boxDecorationRoundedWithShadow(40,
+                  backgroundColor: context.cardColor),
+              child: commonCacheImageWidget(data.img.validate(), 50,
+                  width: 50, fit: BoxFit.cover),
             ),
             8.height,
             Text(data.title.validate(), style: primaryTextStyle()),
           ],
-        ).onTap(() {
-          LSServiceDetailScreen().launch(context);
-        });
+        );
       },
     );
   }
