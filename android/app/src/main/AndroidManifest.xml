@@ -2,7 +2,7 @@
     <application
         android:label="calpride"
         android:name="${applicationName}"
-        android:icon="images/logo.png">
+        android:icon="icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
