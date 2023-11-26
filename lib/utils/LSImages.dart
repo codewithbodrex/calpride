@@ -1,4 +1,5 @@
 const LSWalk1 = 'images/ls_walk1.png';
+const LSIcon = 'images/icon.png';
 const LSBgWalk1 = 'images/ls_bgWalk1.png';
 const LSWalk2 = 'images/ls_walk2.png';
 const LSBgWalk2 = 'images/ls_bgWalk2.png';

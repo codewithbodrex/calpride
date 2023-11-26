@@ -56,19 +56,28 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
                 Text('Hello, CalPride',
                         style: boldTextStyle(color: white, size: 24))
                     .paddingOnly(left: 16, right: 16),
-                IconButton(
-                    onPressed: () {
-                      LSNotificationScreen().launch(context);
-                    },
-                    icon: Icon(Icons.notifications, color: white))
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Image.asset(
+                        'images/circle_logo.png',
+                        width:
+                            32.0, // Sesuaikan ukuran gambar sesuai kebutuhan Anda
+                        height: 32.0,
+                      ),
+                    ),
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.notifications, color: white))
+                  ],
+                ),
               ],
             ),
             flexibleSpace: FlexibleSpaceBar(
               background: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text('Your Location', style: primaryTextStyle(color: white))
-                      .paddingOnly(left: 16, right: 16, top: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[

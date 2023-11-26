@@ -78,7 +78,7 @@ class LSNearByScreenState extends State<LSNearByScreen> {
                   Text(data.location.validate(), style: secondaryTextStyle())
                       .paddingOnly(left: 8, right: 8),
                   8.height,
-                  Text('145 Valencia St, San Francisco',
+                  Text('Sumbersari, Kec. Lowokwaru, Kota Malang',
                           style: secondaryTextStyle())
                       .paddingOnly(left: 8, right: 8),
                   4.height,

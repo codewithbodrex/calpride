@@ -73,9 +73,7 @@ class LSServiceNearByComponentState extends State<LSServiceNearByComponent> {
               8.height,
             ],
           ),
-        ).onTap(() {
-          LSServiceDetailScreen().launch(context);
-        });
+        );
       },
     );
   }

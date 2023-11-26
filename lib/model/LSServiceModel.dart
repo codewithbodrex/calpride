@@ -49,22 +49,22 @@ List<LSServiceModel> getNearByServiceList() {
   list.add(LSServiceModel(
       title: 'Body Massage',
       rating: '5',
-      location: 'Jl. Sunandar Priyo, Malang',
+      location: 'Jl. Bendungan Sutami No.18D',
       img: LSList1));
   list.add(LSServiceModel(
       title: 'Massage Foot',
       rating: '4.5',
-      location: 'Jl. Sunandar Priyo, Malang',
+      location: 'Jl. Bendungan Sutami No.18D',
       img: LSList2));
   list.add(LSServiceModel(
       title: 'Creambath & Spa',
       rating: '3',
-      location: 'Jl. Sunandar Priyo, Malang',
+      location: 'Jl. Bendungan Sutami No.18D',
       img: LSList3));
   list.add(LSServiceModel(
       title: 'Manicure & Pedicure',
       rating: '4',
-      location: 'Jl. Sunandar Priyo, Malang',
+      location: 'Jl. Bendungan Sutami No.18D',
       img: LSList4));
   return list;
 }
